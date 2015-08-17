@@ -264,15 +264,12 @@ function firstDraw (arr){
   return arr;
 }
 function loadArr () {
-  if($("#add-array").val() === "") {
-    return false;
-  }
+  if($("#add-array").val() != "") {  
   var arr,arrL,elem;
   arr = $("#add-array").val().split(',');
   arrL = arr.length;
     if(arrL < 1) {
       alert( "a rrey is to small " );
-      unsortArr = baseUnsortArr.slice();
       return false;
     } 
     unsortArr = [];
@@ -282,6 +279,10 @@ function loadArr () {
         unsortArr.push(elem);
       }
     }
+  } else {
+    unsortArr = baseUnsortArr.slice();
+  }
+    unsortArr = firstDraw(unsortArr);
 }
 
 
@@ -300,5 +301,5 @@ $('#start-sort').on('click',function() {
 });
 $('#load-arr').on('click',function() {
   loadArr();
-  unsortArr = firstDraw(unsortArr);
+  
 });
