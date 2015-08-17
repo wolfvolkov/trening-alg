@@ -1,0 +1,23 @@
+{
+  "name": "trening-alg",
+  "version": "0.0.0",
+  "homepage": "https://github.com/wolfvolkov/trening-alg",
+  "authors": [
+    "Kyryll Volkov <kirillwolfvolkov@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/scripts/vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "materialize": "~0.97.0"
+  },
+  "dependencies": {
+    "materialize": "~0.97.0"
+  }
+}

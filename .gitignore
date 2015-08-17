@@ -1,0 +1,31 @@
+# ***************** IDE ********************
+
+# PhpStorm project ignore.
+.idea
+
+# Sublime project ignore.
+*sublime-project
+*sublime-workspace
+
+# ****** NODE PACKAGE MANAGER & GRANT ******
+
+# Installed node libs. It can be installed use "npm install" console command (if nodejs.org node package manager installed)
+node_modules
+bower_components
+
+# Installed node js. It will create in installation process
+js/nmp.js
+
+# Node package manager log
+npm-debug.log
+
+# Cash temporary files
+.sass-cache
+
+# Temporary compiled files
+*.css.map
+
+# Build temporary files
+build
+
+*.DS_Store
